@@ -20,7 +20,7 @@ public class Explorer
 		Water = 0,
 		Land = 1,
 		ExploredArea = 2,
-    	Treasure = 3
+    Treasure = 3
 	}
 	
   // init static variables
@@ -99,7 +99,7 @@ public class Explorer
 			Console.WriteLine("You crossed over " + gridMap[futureY,futureX]);
       if(gridMap[futureY,futureX]==Element.Treasure){
         // congrats
-        stopProgram("You've found treasure, time to retire!");
+        stopProgram("You've found treasure, time to retire!\n\n"+fetchTreasureString());
       }
 			currX = futureX;
 			currY = futureY;
@@ -192,8 +192,9 @@ ejm97  %%%%";
 
   public static void printInstructions(){
     Console.WriteLine("\nPlease enter a bearing...");
-    Console.WriteLine("North = 0, East = 1, South = 2, West = 3\n");
+    Console.WriteLine("North = 0, East = 1, South = 2, West = 3 or -1 to quit\n");
   }
+
 
   public static void stopProgram(String msg){
     Console.WriteLine(msg);
