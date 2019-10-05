@@ -20,7 +20,7 @@ public class Explorer
 		Water = 0,
 		Land = 1,
 		ExploredArea = 2,
-    Treasure = 3
+    	Treasure = 3
 	}
 	
   // init static variables
